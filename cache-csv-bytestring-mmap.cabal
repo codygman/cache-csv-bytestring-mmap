@@ -27,7 +27,7 @@ executable cache-csv-bytestring-mmap-exe
   build-depends:       base
                      , cache-csv-bytestring-mmap
                      , cassava
-                     , derive-storable
+                     , storable-record
                      , vector >= 0.11.0.0
                      , vector-bytestring
   default-language:    Haskell2010
