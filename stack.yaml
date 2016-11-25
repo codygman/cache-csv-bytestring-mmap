@@ -37,9 +37,16 @@ resolver: lts-7.10
 # will not be run. This is useful for tweaking upstream packages.
 packages:
 - '.'
+- location:
+   git: https://github.com/codygman/vector-bytestring.git
+   commit: 54d0422589a712238088013334fc83d529f7c202
+  extra-dep: true
+
 # Dependency packages to be pulled from upstream that are not in the resolver
 # (e.g., acme-missiles-0.3)
-extra-deps: []
+extra-deps:
+- derive-storable-0.1.0.3
+
 
 # Override default flag values for local packages and extra-deps
 flags: {}
