@@ -41,6 +41,10 @@ packages:
    git: https://github.com/codygman/vector-bytestring.git
    commit: 54d0422589a712238088013334fc83d529f7c202
   extra-dep: true
+- location:
+    git: git@github.com:codygman/hmatrix-mmap.git
+    commit: 46ce77e
+  extra-dep: true
 
 # Dependency packages to be pulled from upstream that are not in the resolver
 # (e.g., acme-missiles-0.3)
