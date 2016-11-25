@@ -10,6 +10,7 @@ import qualified Data.Vector.Storable as V
 import Foreign.Storable.Generic
 import GHC.Word
 import Data.Csv
+import Data.Packed.Vector.MMap
 
 data Person = Person { name :: BS.ByteString
                      , age :: Int
@@ -20,6 +21,6 @@ instance GStorable Person
 main :: IO ()
 main = do
   let person = Person "Cody" 25
-  -- let people = V.fromList [person]
-  -- writeVector "person.mmap" people
-  print "ey"
+  let people = V.fromList [person]
+  writeVector "person.mmap" people
+  print "vector mmap written to disk"
